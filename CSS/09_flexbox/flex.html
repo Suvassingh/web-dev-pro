@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <Style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #242323;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+        
+        .container {
+            background-color: #fff;
+              border: #2196F3 dashed 5px;
+            border-radius: 10px;
+           padding: 20px;
+            margin: 20px ;
+            
+        }
+        .flex_container {
+            display: flex; 
+           justify-content: space-between;
+            margin-bottom: 10px;
+          
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            font-size: 24px;
+            font-weight:  bold;
+            border-radius: 50%;
+        }
+                .item1, .item2, .item3, .item4, .item5 {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            border-radius: 50%;
+        }
+        .item1 { background-color: #4caf50; }
+        .item2 { background-color: #2196F3; }
+        .item3 { background-color: #f44336; }
+        .item4 { background-color: #ff9800; }
+        .item5 { background-color: #9c27b0; }
+    </Style>
+</head>
+<body>
+    <h1>Flexbox Masterclass</h1>
+    <div class="container">
+        <h2>1.Default Flex (row)</h2>
+        <div class="flex_container">
+            <div class="circle item1">1</div>
+            <div class="circle item2">2</div>
+            <div class="circle item3">3</div>
+            <div class="circle item4">4</div>
+            <div class="circle item5">5</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>2.Default Direction :  Column</h2>
+        <div class="flex_container"
+        style="flex-direction: column;">
+            <div class="circle item1">1</div>
+            <div class="circle item2">2</div>
+            <div class="circle item3">3</div>
+            <div class="circle item4">4</div>
+            <div class="circle item5">5</div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>3.Default Direction :  Column</h2>
+        <div class="flex_container"
+       
+         style="flex-direction: column;">
+        
+            <div class="circle item1">1</div>
+            <div class="circle item2">2</div>
+            <div class="circle item3">3</div>
+            <div class="circle item4">4</div>
+            <div class="circle item5">5</div>
+        </div>
+    </div>
+</body>
+</html>
